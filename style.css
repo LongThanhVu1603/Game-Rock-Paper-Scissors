@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+header {
+    background-color: white;
+    padding: 20px;
+}
+header > h1 {
+    color: gray;
+    font-family:monospace;
+    text-align: center;
+}
+.score-board {
+    border-radius: 5px;
+    border: 5px solid white;
+    font-size: 40px;
+    margin: 20px auto;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    font-family: monospace;
+    position: relative;
+    color: white;
+}
+
+.badge {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#user-label{
+    position: absolute;
+    top: 28px;
+    left:-30px;
+    padding: 5px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 28px;
+    right:-30px;
+    padding: 5px;
+}
+
+.result {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.choice {
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+
+.choice:hover {
+    background-color:white;
+    border: black 5px solid;
+}
+
+.choice i {
+    font-size: 50px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.choice i:hover {
+    font-weight: bolder;
+}
+
+#action-messsage{
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+}
