@@ -28,6 +28,10 @@ function win(userChoice, computerChoice){
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = convertToword(userChoice) + " Thắng " + convertToword(computerChoice) + ". Bạn Thắng Rồi!";
+    document.getElementById(userChoice).classList.add('green-glow');
+    setTimeout(function(){ 
+        document.getElementById(userChoice).classList.remove('green-glow')
+    }, 1000);
 }
 
 function lose(userChoice, computerChoice){
@@ -35,12 +39,20 @@ function lose(userChoice, computerChoice){
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = convertToword(userChoice)  + " Thua " + convertToword(computerChoice) + ". Bạn Thua Máy!";
+    document.getElementById(userChoice).classList.add('red-glow');
+    setTimeout(function(){ 
+        document.getElementById(userChoice).classList.remove('red-glow')
+    }, 1000);
 }
 
 function draw(userChoice, computerChoice){
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = convertToword(userChoice)  + " Hòa " + convertToword(computerChoice) + ". Hòa Nhau!";
+    document.getElementById(userChoice).classList.add('gray-glow');
+    setTimeout(function(){ 
+        document.getElementById(userChoice).classList.remove('gray-glow')
+    }, 1000);
 }
 
 function game(userChoice){
